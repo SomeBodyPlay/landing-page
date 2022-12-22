@@ -60,9 +60,17 @@ body {
 }
 
 .title {
+  text-align: center;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   color: $title-color;
+}
+
+.section-title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .container {
@@ -87,4 +95,15 @@ body {
 
 .separator {
   margin-bottom: 48px;
+}
+
+.section-separator {
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: $sub-title-color;
 }
