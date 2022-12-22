@@ -29,6 +29,15 @@ address {
   font-style: normal;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -47,10 +56,36 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.6;
 }
 
 .title {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
+  color: $title-color;
+}
+
+.container {
+  max-width: $tablet;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  // @media screen and (min-width: $tablet) {
+  //   max-width: $desktop;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   max-width: 1074px;
+  // }
+}
+
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.separator {
+  margin-bottom: 48px;
 }
