@@ -1,0 +1,36 @@
+.footer {
+  padding: 48px 0;
+}
+
+.footer__logo--icon {
+  width: 169px;
+  height: 38px;
+  background: url(../images/trust_logotype_dark.svg) 0 0;
+}
+
+.footer__logo--link {
+  display: inline-block;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.footer__wraper {
+  text-align: center;
+}
+
+.image-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.image-list__item {
+  &:not(:first-child) {
+    margin-left: 24px;
+  }
+}

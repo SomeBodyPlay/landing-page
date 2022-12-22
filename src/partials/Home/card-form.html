@@ -1,0 +1,52 @@
+<section class="section">
+  <div class="container">
+    <div class="section-separator">
+      <h2 class="title section-title">Оплатить сейчас</h2>
+      <p class="subtitle">
+        Оплатить покупку криптовалюты можно прямо здесь и сейчас :)
+      </p>
+    </div>
+    <form action="" autocomplete="off">
+      <ul>
+        <li class="card-form__section">
+          <label class="card-form__label" for="card-number"
+            >Номер карты<input
+              class="card-form__input"
+              type="text"
+              id="cardCode"
+              name="card-number"
+              placeholder="XXXX XXXX XXXX XXXX"
+              required
+          /></label>
+        </li>
+        <li class="card-form__section card-form__section-half">
+          <label class="card-form__label" for="cart-date"
+            >Срок действия<input
+              class="card-form__input"
+              id="startDate"
+              type="text"
+              name="cart-date"
+              maxlength="7"
+              placeholder="MM / YYYY"
+              required
+          /></label>
+        </li>
+        <li class="card-form__section card-form__section-half">
+          <label class="card-form__label" for="card-code"
+            >Код безопасности<input
+              class="card-form__input"
+              type="number"
+              name="card-code"
+              id="cvv"
+              maxlength="3"
+              placeholder="CVV / CVC"
+              required
+          /></label>
+        </li>
+      </ul>
+      <div class="card-form__button-wrapper">
+        <button class="button" type="submit">Оплатить</button>
+      </div>
+    </form>
+  </div>
+</section>

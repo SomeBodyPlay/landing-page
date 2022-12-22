@@ -1,0 +1,32 @@
+.card-form__label {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  color: $sub-title-color;
+
+  font-size: 19px;
+}
+
+.card-form__section {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.card-form__input {
+  //   width: 100%;
+  padding: 14px;
+  line-height: 1.4;
+  background-color: $inputs-bg-color;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  transition: border 0.35s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.card-form__button-wrapper {
+  text-align: center;
+}
