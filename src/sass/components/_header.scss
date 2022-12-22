@@ -53,6 +53,6 @@
   font-weight: 600;
 
   &:not(:last-child) {
-    border-bottom: #f2f4f8 1px solid;
+    border-bottom: $border-color 1px solid;
   }
 }

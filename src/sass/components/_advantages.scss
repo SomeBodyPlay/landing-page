@@ -1,0 +1,20 @@
+.advantages__list {
+  text-align: center;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.advantages__text {
+  padding-left: 16px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.section_advantages {
+  border-bottom: $border-color 1px solid;
+}
