@@ -2,10 +2,10 @@
   "name": "lending-gui",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Kl0filinj.github.io/lending-gui",
+  "homepage": "https://somebodyplay.github.io/landing-page",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /lending-gui/"
+    "build": "parcel build src/*.html --public-url /landing-page/"
   },
   "repository": {
     "type": "git",
