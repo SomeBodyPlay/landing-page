@@ -64,6 +64,10 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   color: $title-color;
+
+  &.card-form {
+    text-align: center;
+  }
 }
 
 .section-title {
@@ -71,22 +75,31 @@ body {
   line-height: 1.2;
   margin-top: 16px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 43px;
+    text-align: start;
+  }
 }
 
 .container {
-  max-width: $tablet;
+  max-width: $max-mobile-container;
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 
-  // @media screen and (min-width: $tablet) {
-  //   max-width: $desktop;
-  // }
+  @media screen and (min-width: $tablet) {
+    max-width: $max-tablet-container;
+  }
 
-  // @media screen and (min-width: $desktop) {
-  //   max-width: 1074px;
-  // }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+
+  @media screen and (min-width: $max-desktop-width) {
+    max-width: $max-desktop-container;
+  }
 }
 
 .section {
@@ -106,6 +119,15 @@ body {
   text-align: center;
   margin-bottom: 16px;
   color: $sub-title-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 21px;
+    text-align: start;
+
+    &.card-form {
+      text-align: center;
+    }
+  }
 }
 
 .button {

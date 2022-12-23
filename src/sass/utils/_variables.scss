@@ -10,5 +10,12 @@ $inputs-bg-color: #f9f9f9;
 // Breakpoints:
 
 $mobile: 320px;
+$max-mobile-container: 500px;
+
 $tablet: 768px;
-$desktop: 1280px;
+$max-tablet-container: 720px;
+
+// $desktop: 1280px;
+$desktop: 1000px;
+$max-desktop-width: 1200px;
+$max-desktop-container: 1040px;

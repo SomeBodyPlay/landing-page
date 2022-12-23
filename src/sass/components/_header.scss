@@ -1,13 +1,25 @@
 .header {
   background-color: $accent-color;
   padding: 20px;
+  border-bottom: #2c73cb 1px solid;
 }
 
 .header__container {
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-mobile-container;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $max-tablet-container;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
 }
 
 .header__logo--icon {
@@ -20,6 +32,13 @@
   width: 32px;
   height: 32px;
   background: url(../images/burger-icon.svg) 0 0;
+}
+
+.header__open-button {
+  @media screen and (min-width: $desktop) {
+    display: none;
+    pointer-events: none;
+  }
 }
 
 .header__logo--link {
@@ -35,16 +54,32 @@
 
 .navigation.is-hidden {
   display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .navigation {
   display: block;
   width: 100%;
-  top: 100%;
-  left: 50%;
   margin-top: 20px;
   border-radius: 6px;
   background-color: #fff;
+
+  @media screen and (min-width: $desktop) {
+    width: auto;
+    margin-top: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+.navigation__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 .nvigation__item {
@@ -54,5 +89,15 @@
 
   &:not(:last-child) {
     border-bottom: $border-color 1px solid;
+  }
+
+  @media screen and (min-width: $desktop) {
+    color: #ffffff;
+    padding: 2px 24px;
+
+    &:not(:last-child) {
+      border-bottom: none;
+      // margin-right: 20px;
+    }
   }
 }

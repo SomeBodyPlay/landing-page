@@ -10,10 +10,21 @@
 .card-form__section {
   width: 100%;
   margin-bottom: 24px;
+
+  &.card-form__section-half {
+    @media screen and (min-width: $desktop) {
+      padding-right: 10px;
+      float: left;
+      width: 50%;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
 }
 
 .card-form__input {
-  //   width: 100%;
   padding: 14px;
   line-height: 1.4;
   background-color: $inputs-bg-color;
